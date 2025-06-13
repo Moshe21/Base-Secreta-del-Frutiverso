@@ -308,6 +308,22 @@ main {
     text-align: left; /* Alinea el texto a la izquierda */
     padding-left: 5px; /* Pequeña indentación */
     border-left: 2px solid #FFD700; /* Pequeña barra lateral para destacarlo */
+    
+}
+
+.menu-item .name-description{
+    font-family: 'Oswald', sans-serif; /* O la fuente que uses para el texto normal */
+    font-size: 0.85em; /* Un poco más pequeño que el nombre del ítem */
+    color: #ffa600; /* Un color que contraste pero sea legible, por ejemplo, el púrpura misterioso */
+    margin-top: 5px; /* Pequeño margen superior */
+    margin-bottom: 0;
+    line-height: 1.3;
+    font-style: italic; /* Para que parezca un comentario */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    text-align: left; /* Alinea el texto a la izquierda */
+    padding-left: 5px; /* Pequeña indentación */
+    border-left: 2px solid #FFD700; /* Pequeña barra lateral para destacarlo */
+    text-shadow: 0.5px 0.5px 0px #212121;
 }
 
 /* Ajustes si el h4 está dentro del flexbox del menu-item: */

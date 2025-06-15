@@ -397,7 +397,7 @@ main {
 /* Botón "Vaciar Equipo" */
 #clearCart {
     background-color: var(--color-mystery-purple); /* Púrpura Misterioso */
-    color: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
     border: 3px solid var(--color-ink-black);
     padding: 10px 15px;
     border-radius: 8px;

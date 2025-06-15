@@ -365,3 +365,70 @@ main {
     visibility: visible;
     opacity: 1;
 }
+.remove-item-btn {
+    background-color: var(--color-hero-red); /* Rojo para el botón de quitar */
+    color: white;
+    border: 2px solid var(--color-ink-black);
+    border-radius: 50%; /* Redondo */
+    width: 25px; /* Tamaño del botón */
+    height: 25px;
+    font-size: 0.8em;
+    line-height: 1; /* Centra el texto "X" */
+    padding: 0;
+    margin-left: 10px;
+    flex-shrink: 0; /* Evita que se encoja */
+    box-shadow: 1px 1px 0px var(--color-ink-black);
+}
+
+.remove-item-btn:hover {
+    background-color: var(--color-powerful-blue); /* Cambio de color al pasar el ratón */
+}
+
+/* Contenedor de botones del carrito (incluye vaciar) */
+.cart-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 100%;
+    flex-direction: column; /* Apilado en móvil */
+    gap: 10px; /* Espacio entre los botones */
+}
+
+/* Botón "Vaciar Equipo" */
+#clearCart {
+    background-color: var(--color-mystery-purple); /* Púrpura Misterioso */
+    color: rgb(0, 0, 0);
+    border: 3px solid var(--color-ink-black);
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    box-shadow: 2px 2px 0px var(--color-ink-black);
+    width: 100%; /* Que ocupe todo el ancho disponible en móvil */
+    box-sizing: border-box;
+}
+
+#clearCart:hover {
+    background-color: var(--color-hero-red);
+    color: var(--color-bright-yellow);
+    box-shadow: 4px 4px 0px var(--color-ink-black);
+    transform: translate(-2px, -2px);
+}
+
+/* Media Query para pantallas más grandes (Tabletas y Escritorio) */
+@media (min-width: 768px) {
+    .cart-actions {
+        flex-direction: row; /* En fila en escritorio */
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+    #clearCart {
+        width: auto; /* Ancho automático en desktop */
+        flex-grow: 1; /* Permite que crezca para llenar espacio */
+        /* ... otros estilos de #clearCart que ya tenías ... */
+    }
+    /* #checkout-button también tendrá flex-grow para distribuirse */
+}

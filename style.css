@@ -397,7 +397,7 @@ main {
 /* Botón "Vaciar Equipo" */
 #clearCart {
     background-color: var(--color-mystery-purple); /* Púrpura Misterioso */
-    color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
     border: 3px solid var(--color-ink-black);
     padding: 10px 15px;
     border-radius: 8px;
@@ -431,4 +431,23 @@ main {
         /* ... otros estilos de #clearCart que ya tenías ... */
     }
     /* #checkout-button también tendrá flex-grow para distribuirse */
+}
+/* Botón de quitar ítem individual del carrito */
+.remove-item-btn {
+    background-color: var(--color-hero-red); /* Rojo para el botón de quitar */
+    color: rgb(187, 0, 0);
+    border: 2px solid var(--color-ink-black);
+    border-radius: 50%; /* Redondo */
+    width: 25px; /* Tamaño del botón */
+    height: 25px;
+    font-size: 0.8em;
+    line-height: 1; /* Centra el texto "X" */
+    padding: 0;
+    margin-left: 10px;
+    flex-shrink: 0; /* Evita que se encoja */
+    box-shadow: 1px 1px 0px var(--color-ink-black);
+}
+
+.remove-item-btn:hover {
+    background-color: var(--color-powerful-blue); /* Cambio de color al pasar el ratón */
 }
